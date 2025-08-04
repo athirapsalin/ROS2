@@ -16,7 +16,13 @@ Website: https://learn.microsoft.com/en-us/windows/wsl/install
 2. 
    
 ## ROS2 Humble Installation
+1. Locale Installation
+   > locale # check current locale setings
+   > sudo apt update && sudo apt install locales
+   > sudo locale-gen en_US en_US.UTF-8
+   > sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+   > export LANG=en_US.UTF-8
+   > locale # Confirm updated locale settings
 3. Curl Installation and ROS Key
    > sudo rm /usr/share/keyrings/ros-archive-keyring.gpg
-   >
    > sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
